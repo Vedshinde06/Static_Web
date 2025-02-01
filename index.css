@@ -1,25 +1,39 @@
-/* Navbar Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #003049, #780000);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 nav {
     background: #C1121F;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
+    padding: 1rem 0;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    display: inline;
 }
 
 .nav-links a {
@@ -27,46 +41,66 @@ nav {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, background 0.3s;
+    border-radius: 5px;
 }
 
 .nav-links a:hover {
-    color: #FDF0D5;
-}
-
-/* Hamburger Menu for Mobile */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
+    color: #C1121F;
     background: white;
-    height: 3px;
-    width: 25px;
-    margin: 4px 0;
-    transition: 0.4s;
 }
 
-/* Responsive Navbar */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #C1121F;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-    }
+#hero {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(120deg, #C1121F, #FCA311);
+    color: white;
+}
 
-    .nav-links li {
-        margin: 15px 0;
-    }
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #FDF0D5;
+    color: #003049;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s;
+}
 
-    .hamburger {
-        display: flex;
-    }
+.btn:hover {
+    background: #FF5733;
+    color: white;
+}
+
+section {
+    padding: 60px;
+    text-align: center;
+}
+
+.project {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(to right, #003049, #780000);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
