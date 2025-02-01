@@ -1,71 +1,92 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 header {
-    background: #003049;
+    background: linear-gradient(to right, #003049, #780000);
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #FDF0D5;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF5733;
 }
 
 #hero {
     text-align: center;
-    padding: 50px;
-    background: #C1121F;
+    padding: 60px;
+    background: linear-gradient(120deg, #C1121F, #FCA311);
     color: white;
 }
 
 .btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: #FDF0D5;
     color: #003049;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #FF5733;
+    color: white;
 }
 
 section {
-    padding: 50px;
+    padding: 60px;
     text-align: center;
 }
 
 .project {
     background: white;
-    padding: 20px;
+    padding: 25px;
     margin: 20px auto;
     width: 80%;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
 
 footer {
-    background: #003049;
+    background: linear-gradient(to right, #003049, #780000);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    font-weight: bold;
     position: relative;
     bottom: 0;
     width: 100%;
