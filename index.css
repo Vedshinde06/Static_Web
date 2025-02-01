@@ -16,10 +16,16 @@ header {
     font-weight: bold;
 }
 
+nav {
+    background: #C1121F;
+    padding: 1rem;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -28,14 +34,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FDF0D5;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #FF5733;
+    color: #FDF0D5;
 }
 
 #hero {
@@ -77,7 +83,7 @@ section {
     transition: transform 0.3s;
 }
 
-.project:hover {
+project:hover {
     transform: scale(1.05);
 }
 
